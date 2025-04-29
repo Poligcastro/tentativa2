@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes | TrafegoMaster</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>TrafegoMaster</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Curso</a></li>
+                    <li><a href="conteudo.html">Conteúdo</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="area-aluno.html" class="btn btn-primary">Área do Aluno</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header bg-primary">
+        <div class="container">
+            <h1>Perguntas Frequentes</h1>
+            <p>Respostas para as dúvidas mais comuns sobre o curso TrafegoMaster</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-search">
+                <div class="search-container">
+                    <input type="text" id="faq-search" placeholder="Buscar perguntas..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <p class="search-help">Digite palavras-chave para encontrar respostas rapidamente</p>
+            </div>
+            
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="all">Todas</button>
+                <button class="category-btn" data-category="course">Sobre o Curso</button>
+                <button class="category-btn" data-category="technical">Questões Técnicas</button>
+                <button class="category-btn" data-category="payment">Pagamento</button>
+                <button class="category-btn" data-category="career">Carreira</button>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- Categoria: Sobre o Curso -->
+                <div class="faq-item" data-category="course">
+                    <div class="faq-question">
+                        <h3>Preciso ter conhecimento prévio em marketing digital para fazer o curso?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não, o curso foi desenvolvido para iniciantes e não exige conhecimento prévio em marketing digital ou tráfego pago. Começamos com os conceitos básicos e avançamos gradualmente para estratégias mais complexas.</p>
+                        <p>Você só precisa ter familiaridade básica com navegação na internet e uso de computadores. Todo o conhecimento técnico necessário será ensinado durante o curso.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="course">
+                    <div class="faq-question">
+                        <h3>Quanto tempo preciso dedicar ao curso por semana?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recomendamos uma dedicação de aproximadamente 15 horas semanais para obter os melhores resultados, distribuídas da seguinte forma:</p>
+                        <ul>
+                            <li>5-7 horas para estudo do conteúdo teórico</li>
+                            <li>3-5 horas para exercícios práticos</li>
+                            <li>3-5 horas para implementação e monitoramento de campanhas</li>
+                        </ul>
+                        <p>No entanto, o curso é flexível e você pode adaptar o ritmo de acordo com sua disponibilidade. Como você terá acesso permanente ao conteúdo, pode distribuir o aprendizado em um período maior se necessário.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="course">
+                    <div class="faq-question">
+                        <h3>O curso é atualizado com frequência?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, o conteúdo do curso é atualizado regularmente para refletir as mudanças nas plataformas de anúncios e novas estratégias de marketing digital. As atualizações incluem:</p>
+                        <ul>
+                            <li>Novas funcionalidades das plataformas Meta Ads e Google Ads</li>
+                            <li>Mudanças nas políticas de anúncios</li>
+                            <li>Novas ferramentas de IA para otimização de campanhas</li>
+                            <li>Estratégias emergentes de segmentação e conversão</li>
+                        </ul>
+                        <p>Todos os alunos têm acesso às atualizações sem custo adicional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="course">
+                    <div class="faq-question">
+                        <h3>Qual é o diferencial deste curso em relação a outros de tráfego pago?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O TrafegoMaster se destaca por três diferenciais principais:</p>
+                        <ol>
+                            <li><strong>Foco em marketing de afiliados:</strong> O curso é especificamente voltado para quem deseja trabalhar com afiliação, com estratégias e exemplos direcionados para este modelo de negócio.</li>
+                            <li><strong>Integração com IA:</strong> Ensinamos como utilizar ferramentas de inteligência artificial para criar anúncios mais persuasivos e otimizar campanhas, economizando tempo e melhorando resultados.</li>
+                            <li><strong>Abordagem 100% prática:</strong> Além da teoria, o curso inclui exercícios reais, templates prontos para uso e desafios semanais que garantem a aplicação do conhecimento.</li>
+                        </ol>
+                        <p>Além disso, o curso é constantemente atualizado e oferece suporte personalizado para dúvidas específicas.</p>
+                    </div>
+                </div>
+                
+                <!-- Categoria: Questões Técnicas -->
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Preciso ter contas nas plataformas de anúncios antes de começar o curso?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não é necessário ter contas criadas previamente. No início do curso, você receberá instruções detalhadas sobre como criar e configurar corretamente suas contas no Meta Ads (Facebook/Instagram) e Google Ads.</p>
+                        <p>Recomendamos que você crie as contas apenas quando chegar aos módulos específicos, seguindo nossas orientações para garantir a configuração adequada desde o início.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Qual orçamento mínimo preciso para fazer os exercícios práticos?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para aproveitar ao máximo os exercícios práticos, recomendamos um orçamento mensal entre €100 e €300 para testes de campanhas. Este valor permite:</p>
+                        <ul>
+                            <li>Testar diferentes segmentações e formatos de anúncios</li>
+                            <li>Coletar dados suficientes para otimização</li>
+                            <li>Implementar estratégias de escalonamento em pequena escala</li>
+                        </ul>
+                        <p>No entanto, é possível começar com valores menores (a partir de €50) e aumentar gradualmente conforme sua confiança e resultados crescem. Alguns exercícios também podem ser realizados com orçamentos mínimos ou utilizando contas de teste.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Preciso ter um site ou blog para implementar as estratégias do curso?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não é obrigatório ter um site próprio, pois como afiliado você pode direcionar o tráfego diretamente para as páginas de vendas dos produtos que está promovendo. No entanto, ter um site ou blog traz algumas vantagens:</p>
+                        <ul>
+                            <li>Maior controle sobre a jornada do cliente</li>
+                            <li>Possibilidade de captar leads antes de enviar para a página de vendas</li>
+                            <li>Criação de conteúdo para pré-venda e construção de autoridade</li>
+                            <li>Implementação de estratégias de remarketing mais avançadas</li>
+                        </ul>
+                        <p>No módulo 4, discutimos diferentes abordagens para afiliados com e sem site próprio, e oferecemos orientações para quem deseja criar uma presença online simples e eficaz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Quais ferramentas de IA são utilizadas no curso?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O curso aborda diversas ferramentas de inteligência artificial para otimização de campanhas de tráfego pago, incluindo:</p>
+                        <ul>
+                            <li><strong>Para criação de textos:</strong> ChatGPT, Claude, Jasper e outras ferramentas de geração de texto</li>
+                            <li><strong>Para criação de imagens:</strong> DALL-E, Midjourney, Stable Diffusion e outras ferramentas de geração de imagens</li>
+                            <li><strong>Para análise de dados:</strong> Ferramentas de IA para interpretação de métricas e otimização de campanhas</li>
+                        </ul>
+                        <p>Ensinamos como criar prompts eficazes para cada ferramenta e como integrar o conteúdo gerado por IA em suas campanhas de forma natural e persuasiva. A maioria das ferramentas possui versões gratuitas ou trials que são suficientes para os exercícios do curso.</p>
+                    </div>
+                </div>
+                
+                <!-- Categoria: Pagamento -->
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Quais são as formas de pagamento aceitas?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos diversas formas de pagamento para sua conveniência:</p>
+                        <ul>
+                            <li>Cartão de crédito (parcelamento em até 12x)</li>
+                            <li>Cartão de débito</li>
+                            <li>Transferência bancária</li>
+                            <li>PayPal</li>
+                            <li>Pix (para alunos no Brasil)</li>
+                            <li>Criptomoedas (Bitcoin, Ethereum)</li>
+                        </ul>
+                        <p>Todas as transações são processadas em ambiente seguro com criptografia SSL.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Existe garantia de satisfação?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos garantia de satisfação de 30 dias. Se você não estiver satisfeito com o conteúdo do curso, pode solicitar reembolso integral dentro deste período, sem questionamentos.</p>
+                        <p>Para solicitar o reembolso, basta enviar um e-mail para suporte@trafegomaster.com informando seu nome completo e o motivo da desistência (opcional, apenas para fins de melhoria do curso).</p>
+                        <p>A garantia é válida desde que você não tenha acessado mais de 30% do conteúdo total do curso.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Existe algum custo adicional além do valor do curso?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O valor do curso inclui acesso completo a todo o conteúdo, templates, exercícios práticos e atualizações futuras. No entanto, existem alguns custos adicionais a considerar:</p>
+                        <ul>
+                            <li><strong>Orçamento para campanhas:</strong> Recomendamos €100-300 mensais para implementar os exercícios práticos</li>
+                            <li><strong>Ferramentas de IA premium (opcional):</strong> Algumas ferramentas de IA têm versões pagas com recursos avançados</li>
+                            <li><strong>Domínio e hospedagem (opcional):</strong> Se optar por criar um site próprio</li>
+                        </ul>
+                        <p>Importante ressaltar que muitas ferramentas mencionadas no curso possuem versões gratuitas que são suficientes para aprendizado, e o investimento em campanhas pode ser escalado gradualmente conforme seus resultados.</p>
+                    </div>
+                </div>
+                
+                <!-- Categoria: Carreira -->
+                <div class="faq-item" data-category="career">
+                    <div class="faq-question">
+                        <h3>Quanto tempo leva para começar a ter resultados como afiliado?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O tempo para obter resultados como afiliado varia conforme diversos fatores:</p>
+                        <ul>
+                            <li>Nicho escolhido e sua competitividade</li>
+                            <li>Qualidade dos produtos promovidos</li>
+                            <li>Orçamento disponível para testes</li>
+                            <li>Dedicação à otimização das campanhas</li>
+                            <li>Experiência prévia com marketing digital</li>
+                        </ul>
+                        <p>Em média, alunos dedicados começam a ver suas primeiras conversões entre 2-4 semanas após iniciar as campanhas. A lucratividade consistente geralmente é alcançada entre 2-3 meses, após período de testes e otimizações.</p>
+                        <p>No curso, ensinamos estratégias para acelerar este processo e minimizar o período de testes, focando em abordagens já validadas no mercado.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="career">
+                    <div class="faq-question">
+                        <h3>É possível trabalhar como gestor de tráfego para outras empresas após o curso?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, absolutamente! O curso fornece todas as habilidades necessárias para atuar como gestor de tráfego freelancer ou contratado por empresas. No módulo 11, abordamos especificamente como estruturar sua carreira como gestor de tráfego, incluindo:</p>
+                        <ul>
+                            <li>Como montar seu portfólio profissional</li>
+                            <li>Estratégias para captação de clientes</li>
+                            <li>Precificação de serviços e elaboração de propostas</li>
+                            <li>Gestão de relacionamento com clientes</li>
+                            <li>Ferramentas para relatórios e apresentação de resultados</li>
+                        </ul>
+                        <p>Muitos alunos optam por seguir ambos os caminhos: gerenciar campanhas próprias como afiliado e prestar serviços para empresas, diversificando suas fontes de renda.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="career">
+                    <div class="faq-question">
+                        <h3>Qual é o potencial de ganhos como gestor de tráfego ou afiliado?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O potencial de ganhos varia significativamente conforme sua dedicação, nicho escolhido e modelo de atuação:</p>
+                        
+                        <h4>Como Afiliado:</h4>
+                        <ul>
+                            <li><strong>Iniciante (3-6 meses):</strong> €500-2.000/mês</li>
+                            <li><strong>Intermediário (6-12 meses):</strong> €2.000-5.000/mês</li>
+                            <li><strong>Avançado (mais de 12 meses):</strong> €5.000-20.000+/mês</li>
+                        </ul>
+                        
+                        <h4>Como Gestor de Tráfego Freelancer:</h4>
+                        <ul>
+                            <li><strong>Iniciante:</strong> €30-50/hora ou €500-1.500/cliente/mês</li>
+                            <li><strong>Intermediário:</strong> €50-100/hora ou €1.500-3.000/cliente/mês</li>
+                            <li><strong>Avançado:</strong> €100-200+/hora ou €3.000-10.000+/cliente/mês</li>
+                        </ul>
+                        
+                        <p>Estes valores são estimativas baseadas na experiência de alunos anteriores e podem variar. No módulo 11, discutimos estratégias para maximizar seus ganhos e escalar seu negócio de forma sustentável.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="career">
+                    <div class="faq-question">
+                        <h3>O curso oferece certificado de conclusão?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, ao concluir todos os módulos e exercícios práticos do curso, você receberá um certificado digital de conclusão. O certificado inclui:</p>
+                        <ul>
+                            <li>Seu nome completo</li>
+                            <li>Carga horária total (180 horas)</li>
+                            <li>Conteúdo programático</li>
+                            <li>Data de conclusão</li>
+                            <li>Assinatura digital do instrutor</li>
+                        </ul>
+                        <p>O certificado pode ser adicionado ao seu LinkedIn e portfólio profissional, sendo um diferencial para quem deseja atuar como gestor de tráfego para empresas.</p>
+                        <p>Além do certificado básico, oferecemos certificações avançadas para alunos que completarem desafios específicos com resultados comprovados.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-not-found" style="display: none;">
+                <h3>Não encontrou o que procurava?</h3>
+                <p>Entre em contato conosco para esclarecer suas dúvidas específicas.</p>
+                <a href="#contact-form" class="btn btn-primary">Enviar Pergunta</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section bg-light" id="contact-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ainda tem dúvidas?</h2>
+                <p>Entre em contato conosco e responderemos o mais breve possível</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form action="#" method="post" id="question-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject">
+                                <option value="course">Dúvida sobre o curso</option>
+                                <option value="payment">Pagamento</option>
+                                <option value="technical">Questão técnica</option>
+                                <option value="other">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Sua pergunta</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Pergunta</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Canais de Atendimento</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>E-mail Geral</strong>
+                                    <span>contato@trafegomaster.com</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <strong>Suporte Técnico</strong>
+                                    <span>suporte@trafegomaster.com</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-credit-card"></i>
+                                <div>
+                                    <strong>Financeiro</strong>
+                                    <span>financeiro@trafegomaster.com</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <h4>Horário de Atendimento</h4>
+                        <p>Segunda a Sexta: 9h às 18h (GMT+1)<br>
+                        Tempo médio de resposta: 24 horas úteis</p>
+                        
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>TrafegoMaster</h3>
+                    <p>Curso completo de gestão de tráfego pago com foco em marketing de afiliados, desenvolvido para iniciantes que desejam dominar Google Ads e Meta Ads.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre o Curso</a></li>
+                        <li><a href="conteudo.html">Conteúdo</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@trafegomaster.com</li>
+                        <li><i class="fas fa-headset"></i> Suporte: suporte@trafegomaster.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TrafegoMaster. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Script específico para a página de FAQ
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle para as perguntas
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const faqAnswer = this.nextElementSibling;
+                    const faqToggle = this.querySelector('.faq-toggle i');
+                    
+                    // Toggle answer
+                    faqAnswer.classList.toggle('active');
+                    
+                    // Toggle icon
+                    if (faqToggle.classList.contains('fa-plus')) {
+                        faqToggle.classList.remove('fa-plus');
+                        faqToggle.classList.add('fa-minus');
+                    } else {
+                        faqToggle.classList.remove('fa-minus');
+                        faqToggle.classList.add('fa-plus');
+                    }
+                });
+            });
+            
+            // Filtro por categoria
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get selected category
+                    const category = this.getAttribute('data-category');
+                    
+                    // Show/hide FAQ items based on category
+                    faqItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    
+                    // Check if any items are visible
+                    checkVisibleItems();
+                });
+            });
+            
+            // Search functionality
+            const searchInput = document.getElementById('faq-search');
+            const faqNotFound = document.querySelector('.faq-not-found');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                // Reset category filters
+                categoryBtns.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector('[data-category="all"]').classList.add('active');
+                
+                // Filter FAQ items based on search term
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Check if any items are visible
+                checkVisibleItems();
+            });
+            
+            // Check if any FAQ items are visible
+            function checkVisibleItems() {
+                const visibleItems = Array.from(faqItems).filter(item => item.style.display !== 'none');
+                
+                if (visibleItems.length === 0) {
+                    faqNotFound.style.display = 'block';
+                } else {
+                    faqNotFound.style.display = 'none';
+                }
+            }
+            
+            // Form submission
+            const questionForm = document.getElementById('question-form');
+            
+            questionForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate form submission
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                
+                submitBtn.textContent = 'Enviando...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    // Reset form
+                    this.reset();
+                    
+                    // Show success message
+                    submitBtn.textContent = 'Enviado com Sucesso!';
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

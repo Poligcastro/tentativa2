@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno | TrafegoMaster</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>TrafegoMaster</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Curso</a></li>
+                    <li><a href="conteudo.html">Conteúdo</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="area-aluno.html" class="btn btn-primary active">Área do Aluno</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header bg-primary">
+        <div class="container">
+            <h1>Área do Aluno</h1>
+            <p>Acesse o conteúdo completo do curso e acompanhe seu progresso</p>
+        </div>
+    </section>
+
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-tabs">
+                    <button class="tab-btn active" data-tab="login">Login</button>
+                    <button class="tab-btn" data-tab="register">Cadastro</button>
+                </div>
+                
+                <div class="login-content">
+                    <!-- Login Form -->
+                    <div class="tab-pane active" id="login">
+                        <form action="#" method="post" id="login-form" class="auth-form">
+                            <div class="form-group">
+                                <label for="login-email">E-mail</label>
+                                <input type="email" id="login-email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="login-password">Senha</label>
+                                <div class="password-input">
+                                    <input type="password" id="login-password" name="password" required>
+                                    <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Lembrar-me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                            
+                            <div class="social-login">
+                                <p>Ou entre com:</p>
+                                <div class="social-buttons">
+                                    <button type="button" class="btn-social btn-google">
+                                        <i class="fab fa-google"></i> Google
+                                    </button>
+                                    <button type="button" class="btn-social btn-facebook">
+                                        <i class="fab fa-facebook-f"></i> Facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Register Form -->
+                    <div class="tab-pane" id="register">
+                        <form action="#" method="post" id="register-form" class="auth-form">
+                            <div class="form-group">
+                                <label for="register-name">Nome Completo</label>
+                                <input type="text" id="register-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="register-email">E-mail</label>
+                                <input type="email" id="register-email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="register-password">Senha</label>
+                                <div class="password-input">
+                                    <input type="password" id="register-password" name="password" required>
+                                    <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="password-strength">
+                                    <div class="strength-meter">
+                                        <div class="strength-bar"></div>
+                                    </div>
+                                    <span class="strength-text">Força da senha: Fraca</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="register-confirm-password">Confirmar Senha</label>
+                                <div class="password-input">
+                                    <input type="password" id="register-confirm-password" name="confirm-password" required>
+                                    <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-options">
+                                <div class="terms-checkbox">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms">Concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                            
+                            <div class="social-login">
+                                <p>Ou cadastre-se com:</p>
+                                <div class="social-buttons">
+                                    <button type="button" class="btn-social btn-google">
+                                        <i class="fab fa-google"></i> Google
+                                    </button>
+                                    <button type="button" class="btn-social btn-facebook">
+                                        <i class="fab fa-facebook-f"></i> Facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-preview bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que você encontrará na Área do Aluno</h2>
+                <p>Uma plataforma completa para sua jornada de aprendizado</p>
+            </div>
+            
+            <div class="dashboard-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Conteúdo Organizado</h3>
+                    <p>Acesso a todos os módulos, aulas e materiais complementares organizados de forma intuitiva e progressiva.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Acompanhamento de Progresso</h3>
+                    <p>Visualize seu avanço no curso, aulas concluídas e próximos passos com indicadores visuais de progresso.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Downloads e Recursos</h3>
+                    <p>Acesso a todos os templates, planilhas, checklists e materiais de apoio para aplicação prática.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Comunidade e Suporte</h3>
+                    <p>Participe de discussões com outros alunos, compartilhe experiências e tire dúvidas com nossos especialistas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificados</h3>
+                    <p>Receba seu certificado de conclusão ao finalizar o curso e certificações especiais por desafios concluídos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Acompanhamento de Resultados</h3>
+                    <p>Ferramentas para registrar e analisar os resultados das suas campanhas e seu desenvolvimento profissional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-mockup">
+        <div class="container">
+            <div class="mockup-content">
+                <div class="mockup-text">
+                    <h2>Uma experiência de aprendizado completa</h2>
+                    <p>Nossa plataforma foi desenvolvida para proporcionar a melhor experiência de aprendizado possível, com interface intuitiva e recursos que facilitam seu progresso.</p>
+                    
+                    <ul class="mockup-features">
+                        <li><i class="fas fa-check-circle"></i> Interface responsiva para acesso em qualquer dispositivo</li>
+                        <li><i class="fas fa-check-circle"></i> Sistema de notificações para novos conteúdos e atualizações</li>
+                        <li><i class="fas fa-check-circle"></i> Marcadores de progresso e sistema de favoritos</li>
+                        <li><i class="fas fa-check-circle"></i> Anotações pessoais em cada aula</li>
+                        <li><i class="fas fa-check-circle"></i> Fórum de discussão integrado para dúvidas</li>
+                    </ul>
+                    
+                    <div class="mockup-cta">
+                        <a href="#" class="btn btn-primary">Fazer Tour Virtual</a>
+                    </div>
+                </div>
+                
+                <div class="mockup-image">
+                    <img src="../img/dashboard-mockup.svg" alt="Preview da área do aluno" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que Dizem Nossos Alunos</h2>
+                <p>Experiências reais de quem já está aplicando o conhecimento</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"O curso TrafegoMaster transformou minha abordagem com tráfego pago. Em apenas 2 meses, consegui triplicar minhas conversões como afiliado e hoje trabalho exclusivamente com isso. A metodologia prática e o suporte fizeram toda a diferença."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="../img/testimonial-1.svg" alt="Foto de perfil" class="author-image">
+                        <div class="author-info">
+                            <h4>Carlos Mendes</h4>
+                            <p>Afiliado Profissional</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Comecei do zero, sem nenhum conhecimento em marketing digital. O curso é extremamente didático e as estratégias de IA para criação de anúncios me deram uma vantagem competitiva incrível. Hoje tenho 3 clientes fixos como gestora de tráfego."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="../img/testimonial-2.svg" alt="Foto de perfil" class="author-image">
+                        <div class="author-info">
+                            <h4>Ana Paula Silva</h4>
+                            <p>Gestora de Tráfego Freelancer</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Os templates e exercícios práticos são um diferencial enorme. Consegui implementar campanhas lucrativas logo nas primeiras semanas, mesmo com um orçamento limitado. O retorno sobre o investimento no curso foi extremamente rápido."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="../img/testimonial-3.svg" alt="Foto de perfil" class="author-image">
+                        <div class="author-info">
+                            <h4>Marcelo Costa</h4>
+                            <p>Empreendedor Digital</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-nav">
+                <button class="nav-prev" aria-label="Depoimento anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="nav-dots">
+                    <button class="dot active" aria-label="Depoimento 1"></button>
+                    <button class="dot" aria-label="Depoimento 2"></button>
+                    <button class="dot" aria-label="Depoimento 3"></button>
+                </div>
+                <button class="nav-next" aria-label="Próximo depoimento"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para iniciar sua jornada como Gestor de Tráfego Pago?</h2>
+                <p>Cadastre-se agora e comece a transformar suas habilidades em resultados reais</p>
+                <a href="#" class="btn btn-primary btn-lg">Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>TrafegoMaster</h3>
+                    <p>Curso completo de gestão de tráfego pago com foco em marketing de afiliados, desenvolvido para iniciantes que desejam dominar Google Ads e Meta Ads.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre o Curso</a></li>
+                        <li><a href="conteudo.html">Conteúdo</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@trafegomaster.com</li>
+                        <li><i class="fas fa-headset"></i> Suporte: suporte@trafegomaster.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TrafegoMaster. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Script específico para a página de área do aluno
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tabs functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding tab pane
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Toggle password visibility
+            const toggleBtns = document.querySelectorAll('.toggle-password');
+            
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle input type
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.classList.remove('fa-eye');
+                        icon.classList.add('fa-eye-slash');
+                    } else {
+                        input.type = 'password';
+                        icon.classList.remove('fa-eye-slash');
+                        icon.classList.add('fa-eye');
+                    }
+                });
+            });
+            
+            // Password strength meter
+            const passwordInput = document.getElementById('register-password');
+            const strengthBar = document.querySelector('.strength-bar');
+            const strengthText = document.querySelector('.strength-text');
+            
+            passwordInput.addEventListener('input', function() {
+                const password = this.value;
+                let strength = 0;
+                
+                // Calculate password strength
+                if (password.length >= 8) strength += 25;
+                if (password.match(/[a-z]+/)) strength += 25;
+                if (password.match(/[A-Z]+/)) strength += 25;
+                if (password.match(/[0-9]+/)) strength += 25;
+                
+                // Update strength bar
+                strengthBar.style.width = strength + '%';
+                
+                // Update strength text
+                if (strength <= 25) {
+                    strengthBar.style.backgroundColor = '#ff4d4d';
+                    strengthText.textContent = 'Força da senha: Fraca';
+                } else if (strength <= 50) {
+                    strengthBar.style.backgroundColor = '#ffa64d';
+                    strengthText.textContent = 'Força da senha: Média';
+                } else if (strength <= 75) {
+                    strengthBar.style.backgroundColor = '#ffff4d';
+                    strengthText.textContent = 'Força da senha: Boa';
+                } else {
+                    strengthBar.style.backgroundColor = '#4dff4d';
+                    strengthText.textContent = 'Força da senha: Forte';
+                }
+            });
+            
+            // Form submission
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate login
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                
+                submitBtn.textContent = 'Entrando...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    // Redirect to dashboard (for demo purposes)
+                    submitBtn.textContent = 'Redirecionando...';
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        alert('Esta é uma demonstração. Em um ambiente real, você seria redirecionado para a área do aluno.');
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }, 1500);
+                }, 1500);
+            });
+            
+            registerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate passwords match
+                const password = document.getElementById('register-password').value;
+                const confirmPassword = document.getElementById('register-confirm-password').value;
+                
+                if (password !== confirmPassword) {
+                    alert('As senhas não coincidem. Por favor, verifique.');
+                    return;
+                }
+                
+                // Simulate registration
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                
+                submitBtn.textContent = 'Cadastrando...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    // Show success message
+                    submitBtn.textContent = 'Cadastro Realizado!';
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        alert('Esta é uma demonstração. Em um ambiente real, você receberia um e-mail de confirmação.');
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Switch to login tab
+                        document.querySelector('[data-tab="login"]').click();
+                    }, 1500);
+                }, 1500);
+            });
+            
+            // Testimonials slider
+            const prevBtn = document.querySelector('.nav-prev');
+            const nextBtn = document.querySelector('.nav-next');
+            const dots = document.querySelectorAll('.dot');
+            const testimonials = document.querySelectorAll('.testimonial-card');
+            let currentIndex = 0;
+            
+            // Function to show testimonial by index
+            function showTestimonial(index) {
+                // Hide all testimonials
+                testimonials.forEach(testimonial => {
+                    testimonial.style.display = 'none';
+                });
+                
+                // Remove active class from all dots
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+                
+                // Show current testimonial
+                testimonials[index].style.display = 'block';
+                
+                // Add active class to current dot
+                dots[index].classList.add('active');
+                
+                // Update current index
+                currentIndex = index;
+            }
+            
+            // Initialize slider
+            showTestimonial(0);
+            
+            // Previous button click
+            prevBtn.addEventListener('click', function() {
+                let index = currentIndex - 1;
+                if (index < 0) index = testimonials.length - 1;
+                showTestimonial(index);
+            });
+            
+            // Next button click
+            nextBtn.addEventListener('click', function() {
+                let index = currentIndex + 1;
+                if (index >= testimonials.length) index = 0;
+                showTestimonial(index);
+            });
+            
+            // Dot click
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    showTestimonial(index);
+                });
+            });
+            
+            // Auto slide
+            setInterval(() => {
+                let index = currentIndex + 1;
+                if (index >= testimonials.length) index = 0;
+                showTestimonial(index);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
